@@ -1,0 +1,14 @@
+<package>
+  <description brief="global_config">
+
+    General purpose config files for USC AUV Team ROS projects.
+
+  </description>
+  <author>Dylan Foster</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/global_config</url>
+
+</package>
+
+
