@@ -1,0 +1,10 @@
+<launch>
+  <arg name="namespace" default="environment" />
+  
+  <rosparam command="load" file="$(find global_config)/robot_environment/environment_maps.yaml"
+	    param="maps" ns="$(arg namespace)" />
+
+  <rosparam command="load" file="$(find global_config)/robot_environment/environment_constants.yaml"
+	    param="constants" ns="$(arg namespace)" />
+    
+</launch>
