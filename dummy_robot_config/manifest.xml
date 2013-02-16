@@ -1,0 +1,14 @@
+<package>
+  <description brief="dummy_robot_config">
+
+     dummy_robot_config
+
+  </description>
+  <author>nalyd</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/dummy_robot_config</url>
+
+</package>
+
+
