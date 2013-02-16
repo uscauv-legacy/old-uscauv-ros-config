@@ -1,13 +1,13 @@
 <package>
-  <description brief="dummy_robot_config">
+  <description brief="auv_model">
 
-     dummy_robot_config
+    Models for USC AUV robots. 
 
   </description>
   <author>nalyd</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/dummy_robot_config</url>
+  <url>http://ros.org/wiki/auv_model</url>
 
 </package>
 

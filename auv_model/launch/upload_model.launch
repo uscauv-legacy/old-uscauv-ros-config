@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="robot" default="dummy_robot" />
+  
+  <!-- Upload the physics model for the robot -->
+  <rosparam command="load" file="$(find auv_model)/$(arg robot)/physics_model.yaml" 
+	  param= "physics_model" />
+
+</launch>

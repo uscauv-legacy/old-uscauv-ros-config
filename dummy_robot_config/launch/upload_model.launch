@@ -1,6 +1,0 @@
-<launch>
-
-  <rosparam command="load" file="$(find dummy_robot_config)/dummy_robot_model.yaml" 
-	  param= "robot_model" />
-
-</launch>
