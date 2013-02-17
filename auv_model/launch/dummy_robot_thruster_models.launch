@@ -1,31 +1,31 @@
 <launch>
-  <arg name="namespace" default="model" />  
+  <arg name="thruster_ns" default="thrusters" />  
 
-  <!-- List of all of the thrusters we will be simulating -->
+  <group ns="$(arg thruster_ns)" >
+
+    <!-- List of all of the thrusters we will be simulating -->
   <rosparam command="load" file="$(find auv_model)/dummy_robot/thrusters.yaml"
-	    param="names" ns="$(arg namespace)/thrusters" />
+	    param="names" />
   
   <!-- Upload the thruster model for every thruster in the names param -->
   <rosparam command="load" file="$(find auv_model)/dummy_robot/dummy_thruster.yaml"
-	    param="thruster1" ns="$(arg namespace)/thrusters" />
+	    param="thruster1" />
 
   <rosparam command="load" file="$(find auv_model)/dummy_robot/dummy_thruster.yaml"
-	    param="thruster2" ns="$(arg namespace)/thrusters" />
+	    param="thruster2" />
 
   <rosparam command="load" file="$(find auv_model)/dummy_robot/dummy_thruster.yaml"
-	    param="thruster3" ns="$(arg namespace)/thrusters" />
+	    param="thruster3" />
 
   <rosparam command="load" file="$(find auv_model)/dummy_robot/dummy_thruster.yaml"
-	    param="thruster4" ns="$(arg namespace)/thrusters" />
+	    param="thruster4" />
 
   <rosparam command="load" file="$(find auv_model)/dummy_robot/dummy_thruster.yaml"
-	    param="thruster5" ns="$(arg namespace)/thrusters" />
+	    param="thruster5" />
 
   <rosparam command="load" file="$(find auv_model)/dummy_robot/dummy_thruster.yaml"
-	    param="thruster6" ns="$(arg namespace)/thrusters" />
+	    param="thruster6" />
 
-
-
-
-  
+  </group>
+ 
 </launch>
