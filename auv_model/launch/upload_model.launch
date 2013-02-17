@@ -1,9 +1,15 @@
 <launch>
 
   <arg name="robot" default="dummy_robot" />
-  
-  <!-- Upload the physics model for the robot -->
-  <rosparam command="load" file="$(find auv_model)/$(arg robot)/physics_model.yaml" 
-	  param= "physics_model" />
+  <arg name="model_ns" default="model" />
 
+  <!-- Upload the dynamics model for the robot -->
+  <rosparam command="load" file="$(find auv_model)/$(arg robot)/physics_model.yaml" 
+	    param= "physics" ns="$(arg model_ns)" />
+
+  <!-- Upload the thruster models -->
+  <include file="$(find auv_model)/launch/$(arg robot)_thruster_models.launch" >
+    <arg name="namespace" value="$(arg model_ns)" />
+  </include>
+  
 </launch>
