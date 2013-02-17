@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<robot name="dummy_robot">
+  <link name="hull_link">
+  </link>
+
+  <!-- Left -->
+  <joint name="hull_to_battery1" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="battery1_link" />
+    <origin xyz="-0.05  0.09 -0.1" rpy="0 0 0" />
+  </joint>
+  <link name="battery1_link" >
+  </link>
+
+  <!-- Right -->
+  <joint name="hull_to_battery2" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="battery2_link" />
+    <origin xyz="-0.05  -0.09 -0.1" rpy="0 0 0" />
+  </joint>
+  <link name="battery2_link" >
+  </link>
+  
+  <!-- Forward Left -->
+  <joint name="hull_to_sensor_pod1" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="sensor_pod1_link" />
+    <origin xyz="0.3  0.155575 0" rpy="0 0 0" />
+  </joint>
+  <link name="sensor_pod1_link" >
+  </link>
+
+  <!-- Forward Right -->
+  <joint name="hull_to_sensor_pod2" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="sensor_pod2_link" />
+    <origin xyz="0.3  -0.155575 0" rpy="0 0 0" />
+  </joint>
+  <link name="sensor_pod2_link" >
+  </link>
+
+  <!-- Downward Left -->
+  <joint name="hull_to_sensor_pod3" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="sensor_pod3_link" />
+    <origin xyz="0.15  0.155575 -0.0523748" rpy="0 1.57079 0" />
+  </joint>
+  <link name="sensor_pod3_link" >
+  </link>
+  
+  <!-- Downward Right -->
+  <joint name="hull_to_sensor_pod4" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="sensor_pod4_link" />
+    <origin xyz="0.15  -0.155575 -0.0523748" rpy="0 1.57079 0" />
+  </joint>
+  <link name="sensor_pod4_link" >
+  </link>
+
+  <!-- Rear Depth/Pitch -->
+  <joint name="hull_to_thruster1" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster1_link" />
+    <origin xyz="-0.3  0.0 0" rpy="0 1.57079 0" />
+  </joint>
+  <link name="thruster1_link" >
+  </link>
+
+  <!-- Front Depth/Pitch -->
+  <joint name="hull_to_thruster2" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster2_link" />
+    <origin xyz="0.3  0.0 0" rpy="0 1.57079 0" />
+  </joint>
+  <link name="thruster2_link" >
+  </link>
+
+  <!-- Upper Roll/Strafe -->
+  <joint name="hull_to_thruster3" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster3_link" />
+    <origin xyz="0 0 0.15" rpy="0 0 -1.57079"  />
+  </joint>
+  <link name="thruster3_link" >
+  </link>
+
+  <!-- Lower Roll/Strafe -->
+  <joint name="hull_to_thruster4" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster4_link" />
+    <origin xyz="0 0 -0.15" rpy="0 0 1.57079" />
+  </joint>
+  <link name="thruster4_link" >
+  </link>
+
+  <!-- Left Forward/Yaw -->
+  <joint name="hull_to_thruster5" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster5_link" />
+    <origin xyz="-0.15 0.15 0" rpy="0 0 0" />
+  </joint>
+  <link name="thruster5_link" >
+  </link>
+
+  <!-- Right Forward/Yaw -->
+  <joint name="hull_to_thruster6" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster6_link" />
+    <origin xyz="-0.15 -0.15 0" rpy="0 0 0" />
+  </joint>
+  <link name="thruster6_link" >
+  </link>
+  
+  
+</robot>

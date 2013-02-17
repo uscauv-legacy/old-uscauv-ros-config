@@ -13,5 +13,13 @@
     <include file="$(find auv_model)/launch/$(arg robot)_thruster_models.launch" >
     </include>
 
+    <!-- Upload structures and visualization data in URDF as a text string (robot_state_publisher required format) -->
+    <param name="robot_description" textfile="$(find auv_model)/$(arg robot)/structures.urdf" />
+    <!-- This node will publish the static transforms in the URDF file above -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="$(arg robot)_structures_publisher" />
+    
   </group>
+
+
+  
 </launch>
