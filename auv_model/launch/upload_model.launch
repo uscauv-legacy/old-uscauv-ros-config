@@ -6,8 +6,8 @@
   <group ns="$(arg model_ns)" >
     
     <!-- Upload the dynamics model for the robot -->
-    <rosparam command="load" file="$(find auv_model)/$(arg robot)/physics_model.yaml" 
-	      param= "physics" />
+    <rosparam command="load" file="$(find auv_model)/$(arg robot)/dynamics.yaml" 
+	      param= "dynamics" />
     
     <!-- Upload the thruster models -->
     <group ns="thrusters" >
