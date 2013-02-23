@@ -1,7 +1,27 @@
 <?xml version="1.0"?>
 <robot name="dummy_robot">
-  <link name="hull_link">
+
+  <link name="cm_link">
   </link>
+
+  <!-- Center of Volume -->
+  <joint name="cm_to_cv" type="fixed" >
+    <parent link="cm_link" />
+    <child  link="cv_link" />
+    <origin xyz="0.0  0.0 0.1" rpy="0 0 0" />
+  </joint>
+  <link name="cv_link" >
+  </link>
+
+  <!-- Main Hull -->
+  <joint name="cm_to_hull" type="fixed" >
+    <parent link="cm_link" />
+    <child  link="hull_link" />
+    <origin xyz="0.0  0.0 0.0" rpy="0 0 0" />
+  </joint>
+  <link name="hull_link" >
+  </link>
+
 
   <!-- Left -->
   <joint name="hull_to_battery1" type="fixed" >
@@ -61,7 +81,6 @@
   <joint name="hull_to_thruster1" type="fixed" >
     <parent link="hull_link" />
     <child  link="thruster1_link" />
-    <!-- <origin xyz="-0.3  0.0 0" rpy="0 1.57079 0" /> -->
     <origin xyz="-0.3  0.0 0" rpy="0 -1.57079 0" />
   </joint>
   <link name="thruster1_link" >
@@ -71,7 +90,6 @@
   <joint name="hull_to_thruster2" type="fixed" >
     <parent link="hull_link" />
     <child  link="thruster2_link" />
-    <!-- <origin xyz="0.3  0.0 0" rpy="0 1.57079 0" /> -->
     <origin xyz="0.3  0.0 0" rpy="0 -1.57079 0" />
   </joint>
   <link name="thruster2_link" >
