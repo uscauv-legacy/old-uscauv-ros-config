@@ -10,8 +10,10 @@
 	      param= "physics" />
     
     <!-- Upload the thruster models -->
-    <include file="$(find auv_model)/launch/$(arg robot)_thruster_models.launch" >
-    </include>
+    <group ns="thrusters" >
+      <include file="$(find auv_model)/launch/$(arg robot)_thruster_models.launch" >
+      </include>
+    </group>
 
     <!-- Upload structures and visualization data in URDF as a text string (robot_state_publisher required format) -->
     <param name="robot_description" textfile="$(find auv_model)/$(arg robot)/structures.urdf" />
