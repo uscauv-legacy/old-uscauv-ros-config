@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<robot name="seabee3">
+
+  <link name="cm_link">
+  </link>
+
+  <!-- Main Hull , with visualization data for seabee-->
+  <joint name="cm_to_hull" type="fixed" >
+    <parent link="cm_link" />
+    <child  link="hull_link" />
+    <origin xyz="-0.01696 -0.00026 -0.00460" rpy="0 0 0" />
+  </joint>
+  <link name="hull_link" >
+    <visual name="dummy_robot_visual" >
+      <!-- The origin in this stl file is set at the bottom, back, right corner of the robot instead of at the center-->
+      <origin rpy="0 0 0" xyz="-0.385 -0.37 -0.25" />
+      <geometry name="dummy_robot_geometry">
+	<mesh filename="package://auv_model/dummy_robot/stl/seabee3.STL" />
+      </geometry>
+    </visual>
+  </link>
+
+
+  <!-- Center of Volume -->
+  <joint name="hull_to_cv" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="cv_link" />
+    <origin xyz="0.01157 0.00017 0.00025" rpy="0 0 0" />
+  </joint>
+  <link name="cv_link" >
+  </link>
+
+  <!-- Rear Depth/Pitch -->
+  <joint name="hull_to_thruster1" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster1_link" />
+    <origin xyz="-0.32740  0.000421 -0.049628" rpy="0 -1.57079 0" />
+  </joint>
+  <link name="thruster1_link" >
+  </link>
+
+  <!-- Front Depth/Pitch -->
+  <joint name="hull_to_thruster2" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster2_link" />
+    <origin xyz="0.32740  -0.000421 -0.049618" rpy="0 -1.57079 0" />
+  </joint>
+  <link name="thruster2_link" >
+  </link>
+
+  <!-- Upper Roll/Strafe -->
+  <joint name="hull_to_thruster3" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster3_link" />
+    <origin xyz="0.001304 -0.0499614 0.202502" rpy="0 0 1.57079"  />
+  </joint>
+  <link name="thruster3_link" >
+  </link>
+
+  <!-- Lower Roll/Strafe -->
+  <joint name="hull_to_thruster4" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster4_link" />
+    <origin xyz="0.001304 0.050038 -0.202273" rpy="0 0 -1.57079" />
+  </joint>
+  <link name="thruster4_link" >
+  </link>
+
+  <!-- Left Forward/Yaw -->
+  <joint name="hull_to_thruster5" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster5_link" />
+    <origin xyz="-0.232191 0.202666 0.000586" rpy="0 0 0" />
+  </joint>
+  <link name="thruster5_link" >
+  </link>
+
+  <!-- Right Forward/Yaw -->
+  <joint name="hull_to_thruster6" type="fixed" >
+    <parent link="hull_link" />
+    <child  link="thruster6_link" />
+    <origin xyz="-0.232191 -0.202113 0.001135" rpy="0 0 0" />
+  </joint>
+  <link name="thruster6_link" >
+  </link>
+  
+  
+</robot>

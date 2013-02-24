@@ -1,0 +1,13 @@
+# Dummy robot parameters for testing physics simulation
+
+# Volume displaced in water in m^3
+volume: 0.02923684749
+
+# Mass in kg.
+mass: 28.75418
+
+# A 3x3 row-major matrix (in kg * m^2). 
+# Around the center of mass
+inertial_tensor: [0.86528742478, -0.0010511657, -0.06680600331, -0.0010511657, 1.22273152371, -0.00278086196, -0.06680600331, -0.00278086196, 1.57146787115]
+
+
