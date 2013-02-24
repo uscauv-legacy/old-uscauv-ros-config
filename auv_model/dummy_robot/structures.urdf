@@ -17,9 +17,16 @@
   <joint name="cm_to_hull" type="fixed" >
     <parent link="cm_link" />
     <child  link="hull_link" />
-    <origin xyz="0.0  0.0 0.0" rpy="0 0 0" />
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
   </joint>
   <link name="hull_link" >
+    <visual name="dummy_robot_visual" >
+      <!-- The origin in this stl file is set at the bottom, back, right corner of the robot instead of at the center-->
+      <origin rpy="0 0 0" xyz="-0.385 -0.37 -0.25" />
+      <geometry name="dummy_robot_geometry">
+	<mesh filename="package://auv_model/dummy_robot/stl/seabee3.STL" />
+      </geometry>
+    </visual>
   </link>
 
 

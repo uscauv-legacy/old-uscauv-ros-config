@@ -1,8 +1,9 @@
 <launch>
-  
-  <arg name="model_ns" default="model" />
+ 
   <arg name="robot" default="dummy_robot" />
-  
+  <arg name="model_ns" default="model" />
+  <arg name="visualize" default="false" />
+    
   <group ns="$(arg model_ns)" >
     
     <!-- Upload the dynamics model for the robot -->
@@ -22,6 +23,8 @@
     
   </group>
 
-
+  <!-- Launch rviz with robot visualization config -->
+  <include file="$(find uscauv_visualization)/launch/auv_model_visualization.launch"
+	   if="$(arg visualize)" />
   
 </launch>
