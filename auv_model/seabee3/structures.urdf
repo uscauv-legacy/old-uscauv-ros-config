@@ -15,7 +15,7 @@
       <!-- The origin in this stl file is set at the bottom, back, right corner of the robot instead of at the center-->
       <origin rpy="0 0 0" xyz="-0.385 -0.37 -0.25" />
       <geometry name="dummy_robot_geometry">
-	<mesh filename="package://auv_model/dummy_robot/stl/seabee3.STL" />
+	<mesh filename="package://auv_model/seabee3/stl/seabee3.STL" />
       </geometry>
     </visual>
   </link>
