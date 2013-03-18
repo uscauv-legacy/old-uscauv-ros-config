@@ -24,7 +24,7 @@ frame_id: /camera4
 frame_rate: 30.0
 gain: 64.0
 gamma: 1.0
-guid: 00b09d010090f9d6
+guid: 00b09d010090f9dc
 hue: 0.0
 iris: 8.0
 iso_speed: 400
