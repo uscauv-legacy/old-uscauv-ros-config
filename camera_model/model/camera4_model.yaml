@@ -1,0 +1,22 @@
+# Calibration performed on March 19, 2013
+
+image_width: 640
+image_height: 480
+camera_name: 00b09d010090f9d6
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [1251.75555567071, 0, 404.054112556596, 0, 1255.04138417104, 296.116582836984, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.351945574873111, 0.00742806056320955, -0.00135007749291837, 0.00108313370553283, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [1211.68375588654, 0, 407.787145380472, 0, 0, 1233.43478530466, 296.772024413955, 0, 0, 0, 1, 0]
