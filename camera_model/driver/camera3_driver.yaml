@@ -20,7 +20,7 @@ exposure: 7.0
 focus: 0.0
 format7_color_coding: raw16
 format7_packet_size: 0
-frame_id: /camera4
+frame_id: /camera3
 frame_rate: 30.0
 gain: 64.0
 gamma: 1.0
