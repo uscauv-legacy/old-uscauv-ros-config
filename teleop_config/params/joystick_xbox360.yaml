@@ -1,0 +1,12 @@
+axes: {
+  linear.x: 1,
+  linear.y: 0,
+  linear.z: 7,
+  angular.z: 3,
+  fire_device: 5 }
+buttons: {
+  enable: 4,
+  next_firing_device: 0,
+  prev_firing_device: 1,
+  reset_pose: 9 }
+

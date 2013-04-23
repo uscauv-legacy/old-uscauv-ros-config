@@ -4,7 +4,7 @@
 # Training images: [ orange_tape/orange_tape-0000000000.png ], [ orange_tape/orange_tape-0000000001.png ], [ orange_tape/orange_tape-0000000002.png ], [ orange_tape/orange_tape-0000000003.png ], [ orange_tape/orange_tape-0000000004.png ], [ orange_tape/orange_tape-0000000005.png ], [ orange_tape/orange_tape-0000000006.png ], [ orange_tape/orange_tape-0000000007.png ], [ orange_tape/orange_tape-0000000008.png ], 
 # Mask images: [ orange_tape/orange_tape-0000000000_mask.png ], [ orange_tape/orange_tape-0000000001_mask.png ], [ orange_tape/orange_tape-0000000002_mask.png ], [ orange_tape/orange_tape-0000000003_mask.png ], [ orange_tape/orange_tape-0000000004_mask.png ], [ orange_tape/orange_tape-0000000005_mask.png ], [ orange_tape/orange_tape-0000000006_mask.png ], [ orange_tape/orange_tape-0000000007_mask.png ], [ orange_tape/orange_tape-0000000008_mask.png ], 
 # 
-# true
+# Generated from a series of nine sample images of a notecard covered in BLAZE ORANGE duct tape under different lighting conditions. Used auto mode with 1 iteration.
 blaze_orange: !!opencv-ml-svm
    svm_type: C_SVC
    kernel: { type:RBF, gamma:1.5000000000000001e-04 }
