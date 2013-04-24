@@ -1,0 +1,9 @@
+# Used during simple teleop wet test on Apr 23 20:34:30 PDT 2013 with uscauv-ros-pkg at commit: d5b06341e1e04b4b5eb17ce5ddd938b6ecdd76d9
+angular:
+  pitch: {d_gain: -0.05, i_gain: 0.0, p_gain: 2.0}
+  roll: {d_gain: -0.05, i_gain: 0.0, p_gain: 2.0}
+  yaw: {d_gain: 0.0, i_gain: 0.0, p_gain: 1.0}
+linear:
+  x: {d_gain: 0.0, i_gain: 0.0, p_gain: 1.0}
+  y: {d_gain: 0.0, i_gain: 0.0, p_gain: 1.0}
+  z: {d_gain: 0.0, i_gain: 0.0, p_gain: 1.0}

@@ -1,0 +1,14 @@
+<package>
+  <description brief="controls_config">
+
+     controls_config
+
+  </description>
+  <author>nalyd</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/controls_config</url>
+
+</package>
+
+
