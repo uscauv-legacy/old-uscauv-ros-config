@@ -1,8 +1,33 @@
-axes: {
-  linear.x: 1,
-  linear.y: 0,
-  linear.z: 7,
-  angular.z: 3 }
-buttons: {
-  enable: 4 }
+low_level:
+  axes: {
+    LJoyX: 0,
+    LJoyY: 1,
+    LTrigger: 2,
+    RJoyX: 3,
+    RJoyY: 4,
+    RTrigger: 5,
+    DPadX: 6,
+    DPadY: 7}
+  buttons: {
+    A: 0,
+    B: 1,
+    X: 2,
+    Y: 3,
+    LBumper: 4,
+    RBumper: 5,
+    Select: 6,
+    Start: 7,
+    Logo: 8,
+    LJoy: 9,
+    RJoy: 10 }
+
+high_level:
+  axes: {
+    linear.x: LJoyY,
+    linear.y: LJoyX,
+    linear.z: DPadY,
+    angular.z: RJoyX }
+  buttons: {
+    enable: LBumper,
+    barrel_roll: A}
 
