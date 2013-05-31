@@ -1,3 +1,4 @@
+# Driver params
 auto_brightness: 3
 auto_exposure: 0
 auto_focus: 5
@@ -10,34 +11,42 @@ auto_sharpness: 5
 auto_shutter: 3
 auto_white_balance: 0
 auto_zoom: 5
+reset_on_open: true
+use_ros_time: true
+guid: 00b09d010090f9dc
+frame_id: /camera3
+
+
+# Camera params
+video_mode: 640x480_mono8
+frame_rate: 60
+iso_speed: 400
+brightness: 136.0
+exposure: 7.0
+gamma: 1.0
+shutter: 524.0
+gain: 64.0
+white_balance_BU: 737.0
+white_balance_RV: 1023.
 # De-bayering will be done in separate image_proc node.
 bayer_method: ''
 bayer_pattern: rggb
-binning_x: 0
-binning_y: 0
-brightness: 136.0
-exposure: 7.0
-focus: 0.0
-format7_color_coding: raw16
-format7_packet_size: 0
-frame_id: /camera3
-frame_rate: 30.0
-gain: 64.0
-gamma: 1.0
-guid: 00b09d010090f9dc
+
+
+# Unsupported
 hue: 0.0
-iris: 8.0
-iso_speed: 400
-reset_on_open: true
-roi_height: 0
-roi_width: 0
-saturation: 1.0
-sharpness: 1.0
-shutter: 524.0
-use_ros_time: false
-video_mode: 640x480_mono8
-white_balance_BU: 737.0
-white_balance_RV: 1023.0
+saturation: 0.0
+sharpness: 0.0
+iris: 0.0
+zoom: 0.0
+focus: 0.0
+
+# These params are only used in format7 modes modes:
+roi_height: 120
+roi_width: 160
 x_offset: 0
 y_offset: 0
-zoom: 0.0
+format7_color_coding: mono8
+format7_packet_size: 0
+binning_x: 1
+binning_y: 1
