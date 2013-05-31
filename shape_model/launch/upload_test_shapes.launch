@@ -1,0 +1,8 @@
+<launch>
+  <group ns="shapes" >
+    
+    <param name="notecard" value="$(find shape_model)/templates/notecard.png" />
+    <param name="pipe" value="$(find shape_model)/templates/pipe.png" />
+    
+  </group>
+</launch>
