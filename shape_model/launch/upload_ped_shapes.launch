@@ -1,0 +1,8 @@
+<launch>
+  <group ns="shapes" >
+    
+    <!-- Use our mock pipe made from a shelf instead of the real pipe -->
+    <param name="pipe" value="$(find shape_model)/templates/shelf.png" />
+    
+  </group>
+</launch>
