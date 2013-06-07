@@ -1,0 +1,9 @@
+<launch>
+  
+ <group ns="colors" >
+   
+   <param name="blaze_orange" value="$(find color_model)/svm/pipe_incomplete.yaml" />
+   
+ </group>
+
+</launch>

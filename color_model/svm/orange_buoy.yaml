@@ -1,0 +1,30 @@
+%YAML:1.0
+# Generated: Wed Mar 27 02:30:09 2013
+# 
+# Training images: [ orange_buoy/frame0004.jpg ], [ orange_buoy/frame0006.jpg ], [ orange_buoy/frame0035.jpg ], [ orange_buoy/frame0036.jpg ], [ orange_buoy/frame0052.jpg ], [ orange_buoy/frame0066.jpg ], [ orange_buoy/frame0100.jpg ], [ orange_buoy/frame0112.jpg ], [ orange_buoy/frame0132.jpg ], [ orange_buoy/frame0142.jpg ], [ orange_buoy/frame0161.jpg ], [ orange_buoy/frame0164.jpg ], [ orange_buoy/frame0181.jpg ], 
+# Mask images: [ orange_buoy/frame0004_mask.jpg ], [ orange_buoy/frame0006_mask.jpg ], [ orange_buoy/frame0035_mask.jpg ], [ orange_buoy/frame0036_mask.jpg ], [ orange_buoy/frame0052_mask.jpg ], [ orange_buoy/frame0066_mask.jpg ], [ orange_buoy/frame0100_mask.jpg ], [ orange_buoy/frame0112_mask.jpg ], [ orange_buoy/frame0132_mask.jpg ], [ orange_buoy/frame0142_mask.jpg ], [ orange_buoy/frame0161_mask.jpg ], [ orange_buoy/frame0164_mask.jpg ], [ orange_buoy/frame0181_mask.jpg ], 
+# 
+# true
+blaze_orange: !!opencv-ml-svm
+   svm_type: C_SVC
+   kernel: { type:RBF, gamma:1.5000000000000001e-04 }
+   C: 1.0000000000000001e-01
+   term_criteria: { epsilon:2.2204460492503131e-16, iterations:1 }
+   var_all: 2
+   var_count: 2
+   class_count: 2
+   class_labels: !!opencv-matrix
+      rows: 1
+      cols: 2
+      dt: i
+      data: [ -1, 1 ]
+   sv_total: 2
+   support_vectors:
+      - [ 45., 78. ]
+      - [ 10., 158. ]
+   decision_functions:
+      -
+         sv_count: 2
+         rho: -3.8555771112442905e-03
+         alpha: [ 1.0000000000000001e-01, -1.0000000000000001e-01 ]
+         index: [ 0, 1 ]

@@ -1,0 +1,29 @@
+%YAML:1.0
+# Generated: Thu Jun  6 15:39:10 2013
+# 
+# Training images: [ path_zoom1_training/frame0019.jpg ], [ path_zoom1_training/frame0023.jpg ], [ path_zoom1_training/frame0068.jpg ], [ path_zoom1_training/frame0080.jpg ], [ path_zoom1_training/frame0082.jpg ], [ path_zoom1_training/frame0165.jpg ], [ path_zoom1_training/frame0166.jpg ], [ path_zoom1_training/frame0167.jpg ], [ path_zoom1_training/frame0168.jpg ], [ path_zoom1_training/frame0169.jpg ], [ path_zoom1_training/frame0173.jpg ], [ path_zoom1_training/frame0176.jpg ], [ path_zoom1_training/frame0195.jpg ], [ path_zoom1_training/frame0196.jpg ], [ path_zoom1_training/frame0197.jpg ], 
+# Mask images: [ path_zoom1_training/frame0019_mask.jpg ], [ path_zoom1_training/frame0023_mask.jpg ], [ path_zoom1_training/frame0068_mask.jpg ], [ path_zoom1_training/frame0080_mask.jpg ], [ path_zoom1_training/frame0082_mask.jpg ], [ path_zoom1_training/frame0165_mask.jpg ], [ path_zoom1_training/frame0166_mask.jpg ], [ path_zoom1_training/frame0167_mask.jpg ], [ path_zoom1_training/frame0168_mask.jpg ], [ path_zoom1_training/frame0169_mask.jpg ], [ path_zoom1_training/frame0173_mask.jpg ], [ path_zoom1_training/frame0176_mask.jpg ], [ path_zoom1_training/frame0195_mask.jpg ], [ path_zoom1_training/frame0196_mask.jpg ], [ path_zoom1_training/frame0197_mask.jpg ], 
+# 
+blaze_orange: !!opencv-ml-svm
+   svm_type: C_SVC
+   kernel: { type:RBF, gamma:2.2500000000000003e-03 }
+   C: 2.5000000000000000e+00
+   term_criteria: { epsilon:2.2204460492503131e-16, iterations:1 }
+   var_all: 2
+   var_count: 2
+   class_count: 2
+   class_labels: !!opencv-matrix
+      rows: 1
+      cols: 2
+      dt: i
+      data: [ -1, 1 ]
+   sv_total: 2
+   support_vectors:
+      - [ 38., 85. ]
+      - [ 24., 98. ]
+   decision_functions:
+      -
+         sv_count: 2
+         rho: 0.
+         alpha: [ 1.7853363171913426e+00, -1.7853363171913426e+00 ]
+         index: [ 0, 1 ]
