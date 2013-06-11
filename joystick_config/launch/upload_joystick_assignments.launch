@@ -1,0 +1,7 @@
+<launch>
+
+  <arg name="device" default="xbox360" />
+
+    <rosparam command="load" param="joystick/assignments" file="$(find joystick_config)/params/joystick_$(arg device).yaml" />
+
+</launch>
