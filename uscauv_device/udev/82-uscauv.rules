@@ -1,0 +1,1 @@
+ATTR{idVendor}=="0738", ATTR{idProduct}=="4716", ATTR{manufacturer}=="Mad Catz, Inc.", ATTR{product}=="JOYTECH NEO Se Advanced Controller", ATTR{serial}=="060269DD", GROUP="plugdev", SYMLINK+="uscauv/joystick", RUN+="/usr/local/uscauv/usb-notify.sh 'Joystick' '$attr{speed}' '$kernel' '$attr{bMaxPower}' "
