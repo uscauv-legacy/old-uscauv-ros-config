@@ -1,13 +1,13 @@
 <package>
-  <description brief="teleop_config">
+  <description brief="joystick_config">
 
-    Config files for USC AUV teleop projects.
+    Config files for USC AUV joystick projects.
     
   </description>
   <author>nalyd</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/teleop_config</url>
+  <url>http://ros.org/wiki/joystick_config</url>
 
 </package>
 
