@@ -1,0 +1,7 @@
+<launch>
+  <group ns="objects" >
+    
+    <param name="pipe" value="$(find object_model)/unimodal/pipe.png" />
+    
+  </group>
+</launch>
