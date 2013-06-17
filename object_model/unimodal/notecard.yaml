@@ -1,0 +1,9 @@
+shape: notecard
+color: blaze_orange
+ideal_radius: 0.075 # In meters
+predict_variance: 0.5
+initial_variance: 5.0
+graphics: {
+  color: { r: 255, g: 127, b: 0, a: 255, scale: 255 },
+  transform: { x: 0, y: 0.05, z: 0, roll: 1.57079, pitch: 0, yaw: 0},
+  stl_url: 'package://object_model/stl/pipe.stl' } 
