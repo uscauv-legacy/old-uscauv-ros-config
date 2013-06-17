@@ -88,7 +88,7 @@
   <joint name="hull_to_camera_forward_left" type="fixed" >
     <parent link="robot/structures/hull" />
     <child  link="robot/cameras/forward/left" />
-    <origin xyz="0.273819 0.189038 0.0" rpy="0 -1.57079 3.141592" />
+    <origin xyz="0.273819 0.189038 0.0" rpy="-1.57079 0 -1.57079"  />
   </joint>
   <link name="robot/cameras/forward/left" >
   </link>
@@ -97,7 +97,7 @@
   <joint name="hull_to_camera_forward_right" type="fixed" >
     <parent link="robot/structures/hull" />
     <child  link="robot/cameras/forward/right" />
-    <origin xyz="0.273819 -0.189038 0.0" rpy="0 -1.57079 3.141592" />
+    <origin xyz="0.273819 -0.189038 0.0" rpy="-1.57079 0 -1.57079" />
   </joint>
   <link name="robot/cameras/forward/right" >
   </link>
@@ -106,7 +106,7 @@
   <joint name="hull_to_camera_downward_left" type="fixed" >
     <parent link="robot/structures/hull" />
     <child  link="robot/cameras/downward/left" />
-    <origin xyz="0.0 0.189596 -0.094078" rpy="3.141592 0 0" />
+    <origin xyz="0.0 0.189596 -0.094078" rpy="0 3.141592 1.57079" />
   </joint>
   <link name="robot/cameras/downward/left" >
   </link>
@@ -115,7 +115,7 @@
   <joint name="hull_to_camera_downward_right" type="fixed" >
     <parent link="robot/structures/hull" />
     <child  link="robot/cameras/downward/right" />
-    <origin xyz="0.0 -0.189596 -0.094078" rpy="3.141592 0 0" />
+    <origin xyz="0.0 -0.189596 -0.094078" rpy="0 3.141592 1.57079" />
   </joint>
   <link name="robot/cameras/downward/right" >
   </link>
