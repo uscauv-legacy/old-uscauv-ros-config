@@ -1,0 +1,7 @@
+<launch>
+  <group ns="objects" >
+    
+    <rosparam command="load" param="pipe" file="$(find object_model)/unimodal/pipe.yaml" />
+    
+  </group>
+</launch>
