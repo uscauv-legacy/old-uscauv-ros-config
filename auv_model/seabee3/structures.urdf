@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <robot name="seabee3">
 
-  <link name="cm_link">
+  <link name="robot/structures/cm">
   </link>
 
   <!-- Main Hull , with visualization data for seabee-->
   <joint name="cm_to_hull" type="fixed" >
-    <parent link="cm_link" />
-    <child  link="hull_link" />
+    <parent link="robot/structures/cm" />
+    <child  link="robot/structures/hull" />
     <origin xyz="-0.01696 -0.00026 -0.00460" rpy="0 0 0" />
   </joint>
-  <link name="hull_link" >
+  <link name="robot/structures/hull" >
     <visual name="seabee3_visual" >
       <!-- The origin in this stl file is set at the bottom, back, right corner of the robot instead of at the center-->
       <origin rpy="0 0 0" xyz="-0.385 -0.37 -0.25" />
@@ -23,65 +23,101 @@
   <!-- Real CoV -->
    <!-- Center of Volume -->
   <joint name="hull_to_cv" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="cv_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/structures/cv" />
     <origin xyz="0.01157 0.00017 0.00025" rpy="0 0 0" />
   </joint>
-  <link name="cv_link" >
+  <link name="robot/structures/cv" >
   </link>
-
+  
   <!-- Rear Depth/Pitch -->
   <joint name="hull_to_thruster1" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="thruster1_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/thrusters/thruster1" />
     <origin xyz="-0.32740  0.000421 -0.049628" rpy="0 -1.57079 0" />
   </joint>
-  <link name="thruster1_link" >
+  <link name="robot/thrusters/thruster1" >
   </link>
 
   <!-- Front Depth/Pitch -->
   <joint name="hull_to_thruster2" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="thruster2_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/thrusters/thruster2" />
     <origin xyz="0.32740  -0.000421 -0.049618" rpy="0 -1.57079 0" />
   </joint>
-  <link name="thruster2_link" >
+  <link name="robot/thrusters/thruster2" >
   </link>
 
   <!-- Upper Roll/Strafe -->
   <joint name="hull_to_thruster3" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="thruster3_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/thrusters/thruster3" />
     <origin xyz="0.001304 -0.0499614 0.202502" rpy="0 0 1.57079"  />
   </joint>
-  <link name="thruster3_link" >
+  <link name="robot/thrusters/thruster3" >
   </link>
 
   <!-- Lower Roll/Strafe -->
   <joint name="hull_to_thruster4" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="thruster4_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/thrusters/thruster4" />
     <origin xyz="0.001304 0.050038 -0.202273" rpy="0 0 -1.57079" />
   </joint>
-  <link name="thruster4_link" >
+  <link name="robot/thrusters/thruster4" >
   </link>
 
   <!-- Left Forward/Yaw -->
   <joint name="hull_to_thruster5" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="thruster5_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/thrusters/thruster5" />
     <origin xyz="-0.232191 0.202666 0.000586" rpy="0 0 0" />
   </joint>
-  <link name="thruster5_link" >
+  <link name="robot/thrusters/thruster5" >
   </link>
 
   <!-- Right Forward/Yaw -->
   <joint name="hull_to_thruster6" type="fixed" >
-    <parent link="hull_link" />
-    <child  link="thruster6_link" />
+    <parent link="robot/structures/hull" />
+    <child  link="robot/thrusters/thruster6" />
     <origin xyz="-0.232191 -0.202113 0.001135" rpy="0 0 0" />
   </joint>
-  <link name="thruster6_link" >
+  <link name="robot/thrusters/thruster6" >
+  </link>
+
+  <!-- Forward Left Camera  -->
+  <joint name="hull_to_camera_forward_left" type="fixed" >
+    <parent link="robot/structures/hull" />
+    <child  link="robot/cameras/forward/left" />
+    <origin xyz="0.273819 0.189038 0.0" rpy="-1.57079 0 -1.57079"  />
+  </joint>
+  <link name="robot/cameras/forward/left" >
+  </link>
+
+  <!-- Forward Right Camera  -->
+  <joint name="hull_to_camera_forward_right" type="fixed" >
+    <parent link="robot/structures/hull" />
+    <child  link="robot/cameras/forward/right" />
+    <origin xyz="0.273819 -0.189038 0.0" rpy="-1.57079 0 -1.57079" />
+  </joint>
+  <link name="robot/cameras/forward/right" >
+  </link>
+
+  <!-- Downward Left Camera  -->
+  <joint name="hull_to_camera_downward_left" type="fixed" >
+    <parent link="robot/structures/hull" />
+    <child  link="robot/cameras/downward/left" />
+    <origin xyz="0.0 0.189596 -0.094078" rpy="0 3.141592 1.57079" />
+  </joint>
+  <link name="robot/cameras/downward/left" >
+  </link>
+
+  <!-- Downward Right Camera  -->
+  <joint name="hull_to_camera_downward_right" type="fixed" >
+    <parent link="robot/structures/hull" />
+    <child  link="robot/cameras/downward/right" />
+    <origin xyz="0.0 -0.189596 -0.094078" rpy="0 3.141592 1.57079" />
+  </joint>
+  <link name="robot/cameras/downward/right" >
   </link>
   
   
