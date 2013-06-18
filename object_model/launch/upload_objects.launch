@@ -1,7 +1,8 @@
 <launch>
   <group ns="objects" >
     
-    <rosparam command="load" param="pipe" file="$(find object_model)/unimodal/pipe.yaml" />
+    <!-- <rosparam command="load" param="pipe" file="$(find object_model)/unimodal/pipe.yaml" /> -->
+    <rosparam command="load" param="notecard" file="$(find object_model)/unimodal/notecard.yaml" />
     
   </group>
 </launch>
