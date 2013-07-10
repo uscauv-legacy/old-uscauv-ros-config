@@ -10,6 +10,4 @@ ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{manufacturer}=="FTDI", 
 
 ATTRS{idVendor}=="0403", ATTRS{idProduct}=="d38b", ATTRS{manufacturer}=="Xsens", ATTRS{product}=="Xsens USB-serial converter", ATTRS{serial}=="XSTONX47", GROUP="plugdev", SYMLINK+="seabee/imu", RUN+="/usr/local/uscauv/usb-notify.sh 'Xsens IMU' '$attr{speed}' '$kernel' '$attr{bMaxPower}' "
 
-ATTRS{idVendor}=="05e3", ATTRS{idProduct}=="0608", ATTRS{product}=="USB2.0 Hub", SYMLINK+="seabee/hub", RUN+="/usr/local/uscauv/usb-notify.sh 'Dynex USB Hub' '$attr{speed}' '$kernel' '$attr{bMaxPower}' "
-
 ATTRS{idVendor}=="1a40", ATTRS{idProduct}=="0101", SYMLINK+="seabee/extender", RUN+="/usr/local/uscauv/usb-notify.sh 'USB Extender' '$attr{speed}' '$kernel' '$attr{bMaxPower}'"

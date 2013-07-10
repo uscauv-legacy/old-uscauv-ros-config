@@ -1,9 +1,16 @@
 shape: pipe
 color: blaze_orange
 ideal_radius: 0.6143 # In meters
-predict_variance: 0.5
-update_variance: 5.0
-initial_variance: 5.0
+
+predict_variance: 0.1
+update_variance: 10.0
+initial_variance: 1.0
+exclude_angle: 1.0
+exclude_distance: 1.5
+filter_kill_thresh: 1.0e+17
+uncertainty_radius: 1.0e-06
+mahalanobis_thresh_pos: 100.0
+
 graphics: {
   color: { r: 255, g: 127, b: 0, a: 255, scale: 255 }, 
   transform: { x: 0, y: 0.05, z: 0, roll: 1.57079, pitch: 0, yaw: 0},
