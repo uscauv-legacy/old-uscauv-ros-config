@@ -1,5 +1,11 @@
 <launch>
 
-  <!-- TODO: Actually populate this launch file with thrusters. -->
-
+  <!-- These are dummy params. Only using this to check which thrusters exist from some nodes -->
+  <param name="thruster1" value="false"/>
+  <param name="thruster2" value="false"/>
+  <param name="thruster3" value="false"/>
+  <param name="thruster4" value="false"/>
+  <param name="thruster5" value="false"/>
+  <param name="thruster6" value="false"/>
+  
 </launch>
