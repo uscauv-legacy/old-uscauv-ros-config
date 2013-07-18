@@ -1,0 +1,52 @@
+low_level:
+  # Every button/axis needs to be accounted for or teleop policy will ignore
+  # joystick messages
+  axes: {
+    LJoyX: 0,
+    LJoyY: 1,
+    RJoyX: 2,
+    RJoyY: 3,
+    DPadUp: 4,
+    DPadRight: 5,
+    DPadDown: 6,
+    DPadLeft: 7,
+    LTrigger: 8,
+    RTrigger: 9,
+    LBumper: 10,
+    RBumper: 11,
+    Triangle: 12,
+    Circle: 13,
+    Cross: 14,
+    Square: 15,
+    AccelY: 16,
+    AccelX: 17,
+    AccelZ: 18,
+    GyroZ: 19 }
+  buttons: {
+    Select: 0,
+    LJoy: 1,
+    RJoy: 2,
+    Start: 3,
+    DPadUp: 4,
+    DPadRight: 5,
+    DPadDown: 6,
+    DPadLeft: 7,
+    LTrigger: 8,
+    RTrigger: 9,
+    LBumper: 10,
+    RBumper: 11,
+    Triangle: 12,
+    Circle: 13,
+    Cross: 14,
+    Square: 15,
+    Logo: 16
+    }
+
+high_level:
+  axes: {
+    linear.x: DPadY,
+    linear.y: DPadX,
+    linear.z: LJoyY,
+    angular.z: RJoyX }
+  buttons: {
+    enable: LBumper }

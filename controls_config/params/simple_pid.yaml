@@ -1,11 +1,9 @@
-# Generated during wet test on Tue Apr 30 20:22:48 PDT 2013
-# And then modified for the June 11 wet test
-
-angular:
-  pitch: {d_gain: 0.5, i_gain: 0.0, p_gain: 2.5}
-  roll: {d_gain: 0.5, i_gain: 0.0, p_gain: 2.5}
-  yaw: {d_gain: 0.5, i_gain: 0.0, p_gain: 1.0}
-linear:
-  x: {d_gain: 0.0, i_gain: 0.0, p_gain: 1.0}
-  y: {d_gain: 0.0, i_gain: 0.0, p_gain: 1.0}
-  z: {d_gain: 0.0, i_gain: 0.0, p_gain: 50.0}
+pid:
+  angular:
+    pitch: {d_gain: 0.5, i_gain: 1.0, mod_val: 6.28318530718, p_gain: 2.5, use_mod: false}
+    roll: {d_gain: 0.5, i_gain: 1.0, mod_val: 6.28318530718, p_gain: 2.5, use_mod: false}
+    yaw: {d_gain: 0.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: true}
+  linear:
+    x: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
+    y: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
+    z: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 50.0, use_mod: false}
