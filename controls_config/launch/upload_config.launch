@@ -1,5 +1,6 @@
 <launch>
   
-  <rosparam command="load" file="$(find controls_config)/params/simple_pid.yaml" />
+  <rosparam param="control_server" command="load" file="$(find controls_config)/axes/pd.yaml" />
+  <rosparam param="model/thrusters" command="load" file="$(find controls_config)/thrusters/default_with_floor.yaml" />
 
 </launch>

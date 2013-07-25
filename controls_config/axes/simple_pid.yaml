@@ -6,4 +6,4 @@ pid:
   linear:
     x: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
     y: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
-    z: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 50.0, use_mod: false}
+    z: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
