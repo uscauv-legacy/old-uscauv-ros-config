@@ -31,6 +31,8 @@ high_level:
     angular.z: RJoyX }
   buttons: {
     enable: LBumper,
+    overdrive: RBumper,
     barrel_roll: A,
     increment_pitch: B,
+    next: A,
     follow_pipe: Y }
