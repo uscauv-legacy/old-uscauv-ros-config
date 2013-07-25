@@ -1,11 +1,11 @@
 pid:
   angular:
-    pitch: {d_gain: 0.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 2.5, use_mod: false}
-    roll: {d_gain: 0.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 2.5, use_mod: false}
+    pitch: {d_gain: 1.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 2.5, use_mod: false}
+    roll: {d_gain: 1.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 2.5, use_mod: false}
     yaw: {d_gain: 0.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: true}
   linear:
     x: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
     y: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
-    z: {d_gain: 0.0, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
+    z: {d_gain: 1.5, i_gain: 0.5, mod_val: 6.28318530718, p_gain: 2.0, use_mod: false}
 scale: {axis_scale_angular: 100.0, axis_scale_linear: 100.0, pose_scale_angular: 50.0,
   pose_scale_linear: 100.0}
