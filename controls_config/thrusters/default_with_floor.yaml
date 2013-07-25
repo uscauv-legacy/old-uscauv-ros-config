@@ -1,0 +1,12 @@
+thruster1: {clamp_lower: -100.0, clamp_upper: 100.0, enable: true, floor_mag: 20.0,
+  invert: false, trim: 0.0, use_clamp: false}
+thruster2: {clamp_lower: -100.0, clamp_upper: 100.0, enable: true, floor_mag: 20.0,
+  invert: false, trim: 0.0, use_clamp: false}
+thruster3: {clamp_lower: -100.0, clamp_upper: 100.0, enable: true, floor_mag: 20.0,
+  invert: false, trim: 0.0, use_clamp: false}
+thruster4: {clamp_lower: -100.0, clamp_upper: 100.0, enable: true, floor_mag: 20.0,
+  invert: false, trim: 0.0, use_clamp: false}
+thruster5: {clamp_lower: -100.0, clamp_upper: 100.0, enable: true, floor_mag: 20.0,
+  invert: false, trim: 0.0, use_clamp: false}
+thruster6: {clamp_lower: -100.0, clamp_upper: 100.0, enable: true, floor_mag: 20.0,
+  invert: false, trim: 0.0, use_clamp: false}
