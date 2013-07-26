@@ -1,2 +1,2 @@
-{initial_variance: 100.0, kill_var: 5.0e+16, pass_var: 1.0e+17, predict_variance: 0.1,
+{initial_variance: 100.0, kill_var: 1.0e+16, pass_var: 100000000.0, predict_variance: 0.1,
   update_variance: 10.0}
