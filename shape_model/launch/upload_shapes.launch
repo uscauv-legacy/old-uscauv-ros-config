@@ -4,6 +4,7 @@
     <param name="notecard" value="$(find shape_model)/templates/notecard.png" />
     <param name="pipe" value="$(find shape_model)/templates/pipe.png" />
     <param name="gate_leg" value="$(find shape_model)/templates/gate_leg.png" />
+    <param name="circle" value="$(find shape_model)/templates/circle.png" />
 
     <!-- <param name="hexagon" value="$(find shape_model)/templates/hexagon.png" /> -->
     <!-- <param name="gate" value="$(find shape_model)/templates/gate.png" /> -->
