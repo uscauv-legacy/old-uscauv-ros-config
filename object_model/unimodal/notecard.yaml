@@ -1,10 +1,10 @@
 color: blaze_orange
-exclude_angle: 1.0
+exclude_angle: 1.7
 exclude_distance: 0.75
 graphics:
   color: {a: 255, b: 0, g: 127, r: 255, scale: 255}
   stl_url: package://object_model/stl/pipe.stl
-  transform: {pitch: 0, roll: 1.57079, x: 0, y: 0.05, yaw: 0, z: 0}
+  transform: {pitch: 0, roll: 1.57079, x: 0, y: 0.05, yaw: 1.57079, z: 0}
 ideal_radius: 0.075
 shape: notecard
-symmetry: 6.28318530718
+symmetry: 3.1415926
