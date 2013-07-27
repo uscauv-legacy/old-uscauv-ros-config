@@ -1,0 +1,5 @@
+shape: traffic_light
+color: red
+color_rgba: { r: 255, g: 0, b: 0, a: 255 } # For rendering only
+ideal_radius: 0.0847 # In meters
+stl_url: 'package://object_model/stl/pipe.stl' # Also for rendering only
