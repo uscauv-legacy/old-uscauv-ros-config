@@ -7,6 +7,7 @@
     <!-- <rosparam command="load" param="notecard" file="$(find object_model)/unimodal/notecard.yaml" />xs -->
     <rosparam command="load" param="pipe" file="$(find object_model)/unimodal/pipe.yaml" />   
     <rosparam command="load" param="buoy" file="$(find object_model)/unimodal/buoy.yaml" />
+    <rosparam command="load" param="traffic_light" file="$(find object_model)/unimodal/traffic_light.yaml" />
     
   </group>
 </launch>
