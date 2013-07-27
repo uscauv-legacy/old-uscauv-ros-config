@@ -1,5 +1,10 @@
 shape: traffic_light
 color: red
-color_rgba: { r: 255, g: 0, b: 0, a: 255 } # For rendering only
+graphics: {
+  color: { r: 255, g: 0, b: 0, a: 255, scale: 255 }, 
+  transform: { x: 0, y: 0.0, z: 0, roll: 0, pitch: 0, yaw: 0},
+  stl_url: 'package://object_model/stl/sphere.stl' }
 ideal_radius: 0.0847 # In meters
-stl_url: 'package://object_model/stl/pipe.stl' # Also for rendering only
+symmetry: 0.0001
+exclude_angle: 1.7
+exclude_distance: 1.5
