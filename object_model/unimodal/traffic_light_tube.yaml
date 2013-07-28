@@ -1,0 +1,11 @@
+shape: traffic_light_tube
+# TODO: All possible colors
+color: red
+graphics:
+  color: { r: 255, g: 0, b: 0, a: 100, scale: 255 }
+  stl_url: 'package://object_model/stl/pipe.stl'
+  transform: {pitch: 0, roll: 1.57079, x: 0, y: 0.05, yaw: 1.57079, z: 0}
+ideal_radius: 0.1419 # In meters
+symmetry: 3.1415926
+exclude_angle: 1.7
+exclude_distance: 1.5

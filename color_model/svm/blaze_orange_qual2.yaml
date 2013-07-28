@@ -1,0 +1,30 @@
+%YAML:1.0
+# Generated: Sun Jul 28 01:12:22 2013
+# 
+# Input: /home/francesca/groovy_workspace/sandbox/uscauv-ros-pkg/color_classification/bin/svm_trainer --input=/home/francesca/orange_classifier/ --color=blaze_orange --iterations=1 --auto=true 
+# Training images: [ /home/francesca/orange_classifier/frame0421.jpg ], [ /home/francesca/orange_classifier/frame0422.jpg ], [ /home/francesca/orange_classifier/frame0423.jpg ], [ /home/francesca/orange_classifier/frame0424.jpg ], [ /home/francesca/orange_classifier/frame0425.jpg ], [ /home/francesca/orange_classifier/frame0426.jpg ], [ /home/francesca/orange_classifier/frame0427.jpg ], [ /home/francesca/orange_classifier/frame0428.jpg ], [ /home/francesca/orange_classifier/frame0435.jpg ], [ /home/francesca/orange_classifier/frame0436.jpg ], [ /home/francesca/orange_classifier/frame0437.jpg ], [ /home/francesca/orange_classifier/frame0438.jpg ], [ /home/francesca/orange_classifier/frame0519.jpg ], [ /home/francesca/orange_classifier/frame0520.jpg ], [ /home/francesca/orange_classifier/frame0521.jpg ], [ /home/francesca/orange_classifier/frame0522.jpg ], [ /home/francesca/orange_classifier/frame0523.jpg ], [ /home/francesca/orange_classifier/frame0524.jpg ], [ /home/francesca/orange_classifier/frame0525.jpg ], [ /home/francesca/orange_classifier/frame0526.jpg ], [ /home/francesca/orange_classifier/frame0527.jpg ], [ /home/francesca/orange_classifier/frame0558.jpg ], [ /home/francesca/orange_classifier/frame0559.jpg ], [ /home/francesca/orange_classifier/frame0563.jpg ], [ /home/francesca/orange_classifier/frame0575.jpg ], [ /home/francesca/orange_classifier/frame0578.jpg ], [ /home/francesca/orange_classifier/frame0581.jpg ], [ /home/francesca/orange_classifier/frame0629.jpg ], [ /home/francesca/orange_classifier/frame0630.jpg ], [ /home/francesca/orange_classifier/frame0631.jpg ], [ /home/francesca/orange_classifier/frame0632.jpg ], [ /home/francesca/orange_classifier/frame0866.jpg ], [ /home/francesca/orange_classifier/frame0867.jpg ], [ /home/francesca/orange_classifier/frame0868.jpg ], [ /home/francesca/orange_classifier/frame0869.jpg ], [ /home/francesca/orange_classifier/frame0870.jpg ], [ /home/francesca/orange_classifier/frame0871.jpg ], [ /home/francesca/orange_classifier/frame0872.jpg ], [ /home/francesca/orange_classifier/frame0873.jpg ], [ /home/francesca/orange_classifier/frame0890.jpg ], [ /home/francesca/orange_classifier/frame2189.jpg ], [ /home/francesca/orange_classifier/frame2229.jpg ], [ /home/francesca/orange_classifier/frame2231.jpg ], 
+# Mask images: [ /home/francesca/orange_classifier/frame0421_mask.jpg ], [ /home/francesca/orange_classifier/frame0422_mask.jpg ], [ /home/francesca/orange_classifier/frame0423_mask.jpg ], [ /home/francesca/orange_classifier/frame0424_mask.jpg ], [ /home/francesca/orange_classifier/frame0425_mask.jpg ], [ /home/francesca/orange_classifier/frame0426_mask.jpg ], [ /home/francesca/orange_classifier/frame0427_mask.jpg ], [ /home/francesca/orange_classifier/frame0428_mask.jpg ], [ /home/francesca/orange_classifier/frame0435_mask.jpg ], [ /home/francesca/orange_classifier/frame0436_mask.jpg ], [ /home/francesca/orange_classifier/frame0437_mask.jpg ], [ /home/francesca/orange_classifier/frame0438_mask.jpg ], [ /home/francesca/orange_classifier/frame0519_mask.jpg ], [ /home/francesca/orange_classifier/frame0520_mask.jpg ], [ /home/francesca/orange_classifier/frame0521_mask.jpg ], [ /home/francesca/orange_classifier/frame0522_mask.jpg ], [ /home/francesca/orange_classifier/frame0523_mask.jpg ], [ /home/francesca/orange_classifier/frame0524_mask.jpg ], [ /home/francesca/orange_classifier/frame0525_mask.jpg ], [ /home/francesca/orange_classifier/frame0526_mask.jpg ], [ /home/francesca/orange_classifier/frame0527_mask.jpg ], [ /home/francesca/orange_classifier/frame0558_mask.jpg ], [ /home/francesca/orange_classifier/frame0559_mask.jpg ], [ /home/francesca/orange_classifier/frame0563_mask.jpg ], [ /home/francesca/orange_classifier/frame0575_mask.jpg ], [ /home/francesca/orange_classifier/frame0578_mask.jpg ], [ /home/francesca/orange_classifier/frame0581_mask.jpg ], [ /home/francesca/orange_classifier/frame0629_mask.jpg ], [ /home/francesca/orange_classifier/frame0630_mask.jpg ], [ /home/francesca/orange_classifier/frame0631_mask.jpg ], [ /home/francesca/orange_classifier/frame0632_mask.jpg ], [ /home/francesca/orange_classifier/frame0866_mask.jpg ], [ /home/francesca/orange_classifier/frame0867_mask.jpg ], [ /home/francesca/orange_classifier/frame0868_mask.jpg ], [ /home/francesca/orange_classifier/frame0869_mask.jpg ], [ /home/francesca/orange_classifier/frame0870_mask.jpg ], [ /home/francesca/orange_classifier/frame0871_mask.jpg ], [ /home/francesca/orange_classifier/frame0872_mask.jpg ], [ /home/francesca/orange_classifier/frame0873_mask.jpg ], [ /home/francesca/orange_classifier/frame0890_mask.jpg ], [ /home/francesca/orange_classifier/frame2189_mask.jpg ], [ /home/francesca/orange_classifier/frame2229_mask.jpg ], [ /home/francesca/orange_classifier/frame2231_mask.jpg ], 
+# 
+blaze_orange: !!opencv-ml-svm
+   svm_type: C_SVC
+   kernel: { type:RBF, gamma:2.2500000000000003e-03 }
+   C: 1.0000000000000001e-01
+   term_criteria: { epsilon:2.2204460492503131e-16, iterations:1 }
+   var_all: 2
+   var_count: 2
+   class_count: 2
+   class_labels: !!opencv-matrix
+      rows: 1
+      cols: 2
+      dt: i
+      data: [ -1, 1 ]
+   sv_total: 2
+   support_vectors:
+      - [ 79., 130. ]
+      - [ 15., 131. ]
+   decision_functions:
+      -
+         sv_count: 2
+         rho: -1.3866717040718846e-02
+         alpha: [ 1.0000000000000001e-01, -1.0000000000000001e-01 ]
+         index: [ 0, 1 ]

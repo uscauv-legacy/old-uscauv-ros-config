@@ -1,0 +1,11 @@
+shape: traffic_light_endcap
+# TODO: All possible colors
+color: white
+graphics:
+  color: { r: 255, g: 255, b: 255, a: 255, scale: 255 }
+  stl_url: 'package://object_model/stl/pipe.stl'
+  transform: {pitch: 0, roll: 1.57079, x: 0, y: 0.05, yaw: 0, z: 0}
+ideal_radius: 0.0454 # In meters
+symmetry: 3.1415926
+exclude_angle: 1.7
+exclude_distance: 1.5

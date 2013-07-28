@@ -3,7 +3,7 @@ exclude_angle: 1.7
 exclude_distance: 1.5
 graphics: {
   color: { r: 255, g: 127, b: 0, a: 255, scale: 255 }, 
-  transform: { x: 0, y: 0.0, z: 0, roll: 0, pitch: 0, yaw: 0},
+  transform: { x: -0.125, y: -0.125, z: -0.125, roll: 0, pitch: 0, yaw: 0},
   stl_url: 'package://object_model/stl/sphere.stl' }
 ideal_radius: 0.1143
 shape: circle
