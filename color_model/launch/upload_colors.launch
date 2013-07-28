@@ -6,6 +6,7 @@
 
    <param name="blaze_orange" value="$(find color_model)/svm/blaze_orange_qual2.yaml" />  
    <param name="red" value="$(find color_model)/svm/red.yaml" />    
+   <param name="white" value="$(find color_model)/svm/white.yaml" />    
    
  </group>
 

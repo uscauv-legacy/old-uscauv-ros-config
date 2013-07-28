@@ -1,0 +1,31 @@
+%YAML:1.0
+# Generated: Sun Jul 28 10:19:16 2013
+# 
+# Input: /home/nalyd/ros_workspace/uscauv-ros-pkg/color_classification/bin/svm_trainer --C Hosana bless Rang Dipkin. -I 1 --color=white --input=semifinal1_training --kernel=rbf --scale=.125 --auto 
+# Training images: [ semifinal1_training/frame0563.jpg ], [ semifinal1_training/frame0564.jpg ], [ semifinal1_training/frame0565.jpg ], [ semifinal1_training/frame0566.jpg ], [ semifinal1_training/frame0567.jpg ], 
+# Mask images: [ semifinal1_training/frame0563_mask.jpg ], [ semifinal1_training/frame0564_mask.jpg ], [ semifinal1_training/frame0565_mask.jpg ], [ semifinal1_training/frame0566_mask.jpg ], [ semifinal1_training/frame0567_mask.jpg ], 
+# 
+# true
+white: !!opencv-ml-svm
+   svm_type: C_SVC
+   kernel: { type:RBF, gamma:1.0000000000000001e-05 }
+   C: 1.0000000000000001e-01
+   term_criteria: { epsilon:2.2204460492503131e-16, iterations:1 }
+   var_all: 2
+   var_count: 2
+   class_count: 2
+   class_labels: !!opencv-matrix
+      rows: 1
+      cols: 2
+      dt: i
+      data: [ -1, 1 ]
+   sv_total: 2
+   support_vectors:
+      - [ 80., 90. ]
+      - [ 79., 88. ]
+   decision_functions:
+      -
+         sv_count: 2
+         rho: -1.5853047370906204e-04
+         alpha: [ 1.0000000000000001e-01, -1.0000000000000001e-01 ]
+         index: [ 0, 1 ]
