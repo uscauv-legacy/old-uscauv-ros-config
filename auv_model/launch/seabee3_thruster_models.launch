@@ -1,11 +1,22 @@
 <launch>
 
   <!-- These are dummy params. Only using this to check which thrusters exist from some nodes -->
-  <param name="thruster1" value="false"/>
-  <param name="thruster2" value="false"/>
-  <param name="thruster3" value="false"/>
-  <param name="thruster4" value="false"/>
-  <param name="thruster5" value="false"/>
-  <param name="thruster6" value="false"/>
+  <rosparam command="load" file="$(find auv_model)/seabee3/seabotix_btd150.yaml"
+	    param="thruster1" />
+
+  <rosparam command="load" file="$(find auv_model)/seabee3/seabotix_btd150.yaml"
+	    param="thruster2" />
+
+  <rosparam command="load" file="$(find auv_model)/seabee3/seabotix_btd150.yaml"
+	    param="thruster3" />
+
+  <rosparam command="load" file="$(find auv_model)/seabee3/seabotix_btd150.yaml"
+	    param="thruster4" />
+
+  <rosparam command="load" file="$(find auv_model)/seabee3/seabotix_btd150.yaml"
+	    param="thruster5" />
+
+  <rosparam command="load" file="$(find auv_model)/seabee3/seabotix_btd150.yaml"
+	    param="thruster6" />
   
 </launch>

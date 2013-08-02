@@ -1,0 +1,33 @@
+# Pulled from datasheet with 5-point graph - probably BS
+
+# Thruster power consumption in Watts
+power:
+  - -93.06
+  - -75
+  - -59.4
+  - -46.24
+  - -33.88
+  - -23.04
+  - 0.00
+  - 22.92
+  - 34.3
+  - 44.48
+  - 59.76
+  - 75.6
+  - 92.4
+
+# Thruster force output along propeller axis in Newtons
+force:
+  - -17.65197
+  - -15.69064
+  - -13.533176999999998
+  - -11.277647499999999
+  - -9.022118
+  - -6.668522
+  - 0
+  - 7.3549875
+  - 9.80665
+  - 11.76798
+  - 14.0235095
+  - 16.1809725
+  - 18.1423025
