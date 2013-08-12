@@ -6,6 +6,6 @@ pid:
   linear:
     x: {d_gain: 1.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
     y: {d_gain: 0.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 1.0, use_mod: false}
-    z: {d_gain: 0.5, i_gain: 0.0, mod_val: 6.28318530718, p_gain: 2.0, use_mod: false}
+    z: {d_gain: 0.4, i_gain: 0.2, mod_val: 6.28318530718, p_gain: 2.0, use_mod: false}
 scale: {axis_scale_angular: 100.0, axis_scale_linear: 100.0, pose_scale_angular: 50.0,
   pose_scale_linear: 100.0}

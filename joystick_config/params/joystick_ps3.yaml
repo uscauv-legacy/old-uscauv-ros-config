@@ -44,9 +44,10 @@ low_level:
 
 high_level:
   axes: {
-    linear.x: DPadY,
-    linear.y: DPadX,
-    linear.z: LJoyY,
+    linear.x: LJoyY,
+    linear.y: LJoyX,
     angular.z: RJoyX }
   buttons: {
-    enable: LBumper }
+    enable: LBumper,
+    overdrive: RBumper,
+    next: Cross }
