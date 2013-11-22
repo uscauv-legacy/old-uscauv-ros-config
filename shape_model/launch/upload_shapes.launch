@@ -2,9 +2,9 @@
   <group ns="shapes" >
     
     <param name="notecard" value="$(find shape_model)/templates/notecard.png" />
+    <param name="circle" value="$(find shape_model)/templates/circle.png" />
     <!-- <param name="pipe" value="$(find shape_model)/templates/pipe.png" /> -->
     <!-- <param name="gate_leg" value="$(find shape_model)/templates/gate_leg.png" /> -->
-    <!-- <param name="circle" value="$(find shape_model)/templates/circle.png" /> -->
     <!-- <param name="traffic_light_diffusion" value="$(find shape_model)/templates/traffic_light_diffusion.png" /> -->
     <!-- <param name="traffic_light_tube" value="$(find shape_model)/templates/traffic_light_tube.png" /> -->
     <!-- <param name="traffic_light_endcap" value="$(find shape_model)/templates/traffic_light_endcap.png" /> -->
