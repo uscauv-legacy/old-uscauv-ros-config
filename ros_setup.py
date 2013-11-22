@@ -20,8 +20,8 @@ print "We will now ask for your password so we can install things as root"
 
 subprocess.call("sudo sh -c 'echo \"deb http://packages.ros.org/ros/ubuntu "+code+" main\" > /etc/apt/sources.list.d/ros-latest.list'", shell=True)
 subprocess.call("wget http://packages.ros.org/ros.key -O - | sudo apt-key add -", shell=True)
-subprocess.call("sudo apt-get update", shell=True)
-subprocess.call("sudo apt-get install ros-groovy-desktop-full", shell=True)
+subprocess.call("sudo apt-get -y update", shell=True)
+subprocess.call("sudo apt-get -y install ros-groovy-desktop-full", shell=True)
 subprocess.call("sudo rosdep init", shell=True)
 subprocess.call("rosdep update", shell=True)
 
@@ -29,7 +29,7 @@ subprocess.call("echo \"source /opt/ros/groovy/setup.bash\" >> ~/.bashrc", shell
 subprocess.call("echo \"export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:"+home+"/catkin_ws/src >> ~/.bashrc", shell=True)
 subprocess.call("source ~/.bashrc", shell=True)
 
-subprocess.call("sudo apt-get install python-rosinstall ros-groovy-joystick-drivers libgsl0-dev libtesseract-dev ros-groovy-camera1394", shell=True)
+subprocess.call("sudo apt-get -y install python-rosinstall ros-groovy-joystick-drivers libgsl0-dev libtesseract-dev ros-groovy-camera1394", shell=True)
 
 subprocess.call("mkdir -p ~/catkin_ws/src", shell=True)
 os.chdir(home+"/catkin_ws/src")
@@ -39,7 +39,7 @@ subprocess.call("git clone https://github.com/uscauv/uscauv-ros-config.git -b gr
 
 subprocess.call("git clone https://code.google.com/p/usc-interaction-software.ros/", shell=True)
 
-subprocess.call("sudo apt-get install libleptonica-dev", shell=True)
+subprocess.call("sudo apt-get -y install libleptonica-dev", shell=True)
 
 print "Setting up camera udev rules"
 subprocess.call("uscauv-ros-config/uscauv_device/udev/install_seabee_udev.sh", shell=True)
