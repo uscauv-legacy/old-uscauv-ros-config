@@ -1,0 +1,6 @@
+<launch>
+
+  <!-- Image segmentation -->
+  <rosparam command="load" file="$(find vision_config)/params/segmentation.yaml" ns="image_segmentation" param="segmentation" />
+
+</launch>
