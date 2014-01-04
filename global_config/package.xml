@@ -2,7 +2,7 @@
   <name>global_config</name>
   <version>0.0.0</version>
   <description>General purpose config files for USC AUV Team ROS projects.</description>
-  <maintainer email="">Dylan Foster</maintainer>
+  <maintainer email="turtlecannon@gmail.com">Dylan Foster</maintainer>
 
   <license>BSD</license>
 

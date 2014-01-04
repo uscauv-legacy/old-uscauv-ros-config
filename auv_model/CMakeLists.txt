@@ -14,8 +14,8 @@ find_package(catkin REQUIRED COMPONENTS robot_state_publisher)
 # catkin_package parameters: http://ros.org/doc/groovy/api/catkin/html/dev_guide/generated_cmake_api.html#catkin-package
 # TODO: fill in what other packages will need to use this package
 catkin_package(
-    DEPENDS robot_state_publisher
-    CATKIN_DEPENDS # TODO
+    DEPENDS 
+    CATKIN_DEPENDS robot_state_publisher
     INCLUDE_DIRS # TODO include
     LIBRARIES # TODO
 )
