@@ -1,0 +1,34 @@
+<package>
+  <name>uscauv-ros-config</name>
+  <version>0.0.0</version>
+  <description>seabee3-ros-pkg</description>
+  <maintainer email="turtlecannon@gmail.com">Dylan Foster</maintainer>
+
+  <license>BSD</license>
+
+  <!-- <url type="bugtracker"></url> -->
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>auv_model</run_depend>
+  <run_depend>uscauv_device</run_depend>
+  <run_depend>joystick_config</run_depend>
+  <run_depend>color_model</run_depend>
+  <run_depend>camera_model</run_depend>
+  <run_depend>vision_config</run_depend>
+  <run_depend>object_model</run_depend>
+  <run_depend>global_config</run_depend>
+  <run_depend>controls_config</run_depend>
+  <run_depend>shape_model</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  
+  <export>
+    <metapackage/>
+  </export>
+
+</package>
