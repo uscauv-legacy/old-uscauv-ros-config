@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(auv_model)
 # Load catkin and all dependencies required for this package
 # TODO: remove all from COMPONENTS that are not catkin packages.
-find_package(catkin REQUIRED COMPONENTS robot_state_publisher)
+find_package(catkin REQUIRED)
 
 # include_directories(include ${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})## Generate added messages and services with any dependencies listed here
 #generate_messages(
@@ -15,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS robot_state_publisher)
 # TODO: fill in what other packages will need to use this package
 catkin_package(
     DEPENDS 
-    CATKIN_DEPENDS robot_state_publisher
+    CATKIN_DEPENDS
     INCLUDE_DIRS # TODO include
     LIBRARIES # TODO
 )
